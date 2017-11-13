@@ -11,7 +11,6 @@ nano /etc/php/7.0/fpm/php.ini
 cgi.fix_pathinfo=0;
 
 #change the default upload_max_filesize = 2M, search with ctrl+w on nano editor. 
-
 upload_max_filesize = 64M 
 
 #change the default post_max_filesize = 8M, search with ctrl+w on nano editor. 
