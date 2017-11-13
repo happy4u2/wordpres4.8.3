@@ -39,9 +39,9 @@ chown -Rf www-data:www-data /var/www
  systemctl reload nginx
 
 cd /var/www/html
-wget https://wordpress.org/latest.zip
-unzip latest.zip
-mv wordpress/* /var/www/html
+git clone https://github.com/esdrasrios/wordpres4.8.3.git .
+
+#install wordpress
 
 nano /etc/nginx/sites-available/default
 
