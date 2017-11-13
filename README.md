@@ -6,7 +6,6 @@ apt-get install nginx
 apt-get install php-fpm php-mysql php-zip php-curl unzip git
 
 nano /etc/php/7.0/fpm/php.ini
-
 #Uncomment and change default value 1 for 0 on cgi.fix_pathinfo=0, search with ctrl+w on nano editor.
 cgi.fix_pathinfo=0;
 
