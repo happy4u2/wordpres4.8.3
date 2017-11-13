@@ -3,6 +3,11 @@
 sudo su
 apt-get update
 apt-get install nginx
+apt-get install php-fpm php-mysql unzip
+
+sudo su
+apt-get update
+apt-get install nginx
 apt-get install php-fpm php-mysql php-zip php-curl unzip git
 
 nano /etc/php/7.0/fpm/php.ini
