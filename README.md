@@ -40,8 +40,8 @@ location ~ /\.ht {
 }
 
 chown -Rf www-data:www-data /var/www
-systemctl restart php7.0-fpm
-systemctl reload nginx
+ systemctl restart php7.0-fpm
+ systemctl reload nginx
 
 cd /var/www/html
 wget https://wordpress.org/latest.zip
