@@ -44,7 +44,7 @@ try_files $uri $uri/ /index.php$is_args$args;
 }
 
 nano /etc/nginx/nginx.conf
-# add to http section
+#add to http section
 client_max_body_size 64M;
 
 
