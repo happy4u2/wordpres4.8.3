@@ -6,10 +6,13 @@ apt-get install nginx
 apt-get install php-fpm php-mysql php-zip php-curl unzip git
 
 nano /etc/php/7.0/fpm/php.ini
+
 #Uncomment and change default value 1 for 0 on cgi.fix_pathinfo=0, search with ctrl+w on nano editor.
 cgi.fix_pathinfo=0;
+
 #change the default upload_max_filesize = 2M, search with ctrl+w on nano editor. 
 upload_max_filesize = 64M 
+
 #change the default post_max_filesize = 8M, search with ctrl+w on nano editor. 
 post_max_filesize = 64M
 
