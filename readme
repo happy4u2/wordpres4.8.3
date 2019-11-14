@@ -1,11 +1,16 @@
 # wordpres4.8.3
 
 sudo su;
-apt-get update;
+apt-get update y;
 apt-get install nginx;
 apt-get install php-fpm php-mysql php-zip php-xml php-curl unzip git;
 
-nano /etc/php/7.0/fpm/php.ini
+sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+
+# for WinSCP SFTP settings for permissions
+su -c /usr/libexec/openssh/sftp-server
+
+nano /etc/php.ini
 #Uncomment and change default value 1 for 0 on cgi.fix_pathinfo=0, search with ctrl+w on nano editor.
 
 cgi.fix_pathinfo=0;
@@ -34,7 +39,6 @@ location ~ /\.ht {
     deny all;
 }
 
-chown -Rf www-data:www-data /var/www
  systemctl restart php7.0-fpm
  systemctl reload nginx
 
