@@ -43,7 +43,7 @@ location ~ /\.ht {
  systemctl reload nginx
 
 cd /var/www/html
-git clone https://github.com/esdrasrios/wordpres4.8.3.git .
+git clone https://github.com/happy4u2/wordpres4.8.3.git .
 
 #install wordpress
 
